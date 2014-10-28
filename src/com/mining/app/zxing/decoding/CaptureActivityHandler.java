@@ -27,8 +27,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.example.qr_codescan.MipcaActivityCapture;
 import com.example.qr_codescan.R;
+import com.example.qrcodescan.activity.MipcaActivityCapture;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
 import com.mining.app.zxing.camera.CameraManager;

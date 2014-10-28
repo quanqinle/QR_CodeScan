@@ -23,8 +23,8 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 
-import com.example.qr_codescan.MipcaActivityCapture;
 import com.example.qr_codescan.R;
+import com.example.qrcodescan.activity.MipcaActivityCapture;
 import com.google.zxing.BinaryBitmap;
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.MultiFormatReader;

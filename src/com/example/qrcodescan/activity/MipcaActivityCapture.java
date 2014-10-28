@@ -1,4 +1,4 @@
-package com.example.qr_codescan;
+package com.example.qrcodescan.activity;
 
 import java.io.IOException;
 import java.util.Vector;
@@ -21,6 +21,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.qr_codescan.R;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
 import com.mining.app.zxing.camera.CameraManager;
@@ -49,7 +50,7 @@ public class MipcaActivityCapture extends Activity implements Callback {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_capture);
-		//ViewUtil.addTopView(getApplicationContext(), this, R.string.scan_card);
+//		ViewUtil.addTopView(getApplicationContext(), this, R.string.scan_card);
 		CameraManager.init(getApplication());
 		viewfinderView = (ViewfinderView) findViewById(R.id.viewfinder_view);
 		
@@ -59,7 +60,6 @@ public class MipcaActivityCapture extends Activity implements Callback {
 			@Override
 			public void onClick(View v) {
 				MipcaActivityCapture.this.finish();
-				
 			}
 		});
 		hasSurface = false;
@@ -117,7 +117,7 @@ public class MipcaActivityCapture extends Activity implements Callback {
 		String resultString = result.getText();
 		if (resultString.equals("")) {
 			Toast.makeText(MipcaActivityCapture.this, "Scan failed!", Toast.LENGTH_SHORT).show();
-		}else {
+		} else {
 			Intent resultIntent = new Intent();
 			Bundle bundle = new Bundle();
 			bundle.putString("result", resultString);

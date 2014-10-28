@@ -7,7 +7,7 @@
     <Button
         android:id="@+id/button_back"
         android:layout_width="75.0dip"
-        android:text="返回"
+        android:text="@string/btn_back_text"
         android:background="@drawable/mm_title_back_btn"
         android:textColor="@android:color/white"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:layout_alignBottom="@+id/button_back"
         android:layout_centerHorizontal="true"
         android:gravity="center_vertical"
-        android:text="二维码扫描"
+        android:text="@string/function_description"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
 
